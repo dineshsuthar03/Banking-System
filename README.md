@@ -1,4 +1,3 @@
-"# Banking-System" 
 # MyBank - A Simple Banking System
 
 MyBank is a simple and straightforward banking system built with Django. This project allows users to perform common banking operations like creating accounts, checking balances, depositing, withdrawing, and transferring funds between accounts.
