@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banking System</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Welcome to MyBank</h1>
+    <ul>
+        <li><a href="{% url 'bank_txn:create_account' %}">Create Account</a></li>
+        <li><a href="{% url 'bank_txn:get_account_balance' %}">Get Account Balance</a></li>
+        <!-- Add links to other views: deposit, withdraw, transfer -->
+        <!-- ... -->
+    </ul>
+</body>
+</html>

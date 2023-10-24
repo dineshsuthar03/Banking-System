@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+</head>
+<body>
+    <h2>Create Account</h2>
+    <form method="POST" action="{% url 'bank_txn:create_account' %}">
+        {% csrf_token %}
+        <label for="acc_holder_name">Account Holder Name:</label>
+        <input type="text" id="acc_holder_name" name="acc_holder_name" required><br><br>
+        <label for="account_no">Account Number:</label>
+        <input type="text" id="account_no" name="account_no" required><br><br>
+        <label for="initial_balance">Initial Balance:</label>
+        <input type="number" id="initial_balance" name="initial_balance" required><br><br>
+        <input type="submit" value="Create Account">
+    </form>
+</body>
+</html>

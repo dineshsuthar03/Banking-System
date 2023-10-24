@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Account Balance</title>
+</head>
+<body>
+    <h1>Get Account Balance</h1>
+    <form method="post" action="{% url 'get_balance' %}">
+        {% csrf_token %}
+        <label for="account_number">Account Number:</label>
+        <input type="text" name="account_number" id="account_number">
+        <button type="submit">Get Balance</button>
+    </form>
+    {% if account_balance %}
+    <p>Account Balance: {{ account_balance }}</p>
+    {% endif %}
+</body>
+</html>
